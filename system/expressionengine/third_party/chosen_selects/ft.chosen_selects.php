@@ -126,7 +126,7 @@ class Chosen_selects_ft extends Multi_select_ft {
      */
 	function save($data)
 	{
-		return implode('|', $data);
+		return !empty($data) ? implode('|', $data) : $data;
 	}
 	// --------------------------------------------------------------------
 
